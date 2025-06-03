@@ -5,19 +5,20 @@
 }
 :root {
     --bg-color: #e6f7ff;
-    --primary-color: #007acc;
+    --primary-color: #005b96;
     --text-color: #333;
+    --selct-color: #000;
     --section-bg: #ffffff;
 }
 body {
   font-family: Arial, sans-serif;
-  background: #f4f8fb;
+  background: var(--bg-color)
   color: var(--text-color);
   margin: 0;
   padding: 0;
 }
 header {
-  background: #005b96;
+  background: var(--primary-color);
   color: #fff;
   display: flex;
   align-items: center;
@@ -28,14 +29,20 @@ header {
   height: 90px;
   margin-right: 50px;
 }
+nav ul{
+    list-style: none;
+}
 nav a {
-  color: #fff;
+  color: var(--section-bg);
   margin: 0 16px;
   text-decoration: none;
   font-weight: bold;
+  transition: color .3s;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 nav a:hover {
-  text-decoration: underline;
+  color: var(--selct-color);
 }
 .theme-switcher {
   cursor: pointer;
@@ -123,12 +130,12 @@ footer {
   padding: 18px 0;
   margin-top: 40px;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header, .hero, .mapa, .alertas, .colaborativo, .historico, .tecnologia, .quiz {
     padding: 16px 2%;
     margin: 24px 2%;
   }
   .logo {
-    height: 36px;
+    height: 90px;
   }
 }

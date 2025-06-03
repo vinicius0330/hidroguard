@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colabore - Enchentes Brasil</title>
+  
+  <link rel="shortcut icon" href="../src/assets/hidro.png">
+  <link rel="stylesheet" href="../src/css/estilo.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../src/assets/hidro-azul.png" alt="Logo" class="logo"></a>
+    <nav>
+      <a href="../index.html">Início</a>
+      <a href="formulario.html">Colabore</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Registre um Ponto de Alagamento</h1>
+    <form id="colaborativoForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required>
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" required>
+      <label for="localizacao">Localização (latitude, longitude):</label>
+      <input type="text" id="localizacao" name="localizacao" required>
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" required></textarea>
+      <label for="foto">Foto (opcional):</label>
+      <input type="file" id="foto" name="foto" accept="image/*">
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="mensagem-colaborativo"></div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Alerta de Enchentes. Todos os direitos reservados.</p>
+  </footer>
+  <script src="../src/js/script.js"></script>
+</body>
+</html>

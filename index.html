@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enchentes Brasil — Monitoramento e Prevenção</title>
+  
+  <link rel="shortcut icon" href="src/assets/hidro.png">
+  <link rel="stylesheet" href="src/css/estilo.css">
+</head>
+<body>
+  <header>
+    <img src="src/assets/hidro-azul.png" alt="Logo Hidroguard" class="logo">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="pages/formulario.html">Colabore</a>
+      <a href="pages/quiz.html">Quiz</a>
+      <span class="theme-switcher" title="Claro" data-theme="claro">☀️</span>
+      <span class="theme-switcher" title="Nublado" data-theme="nublado">⛅</span>
+      <span class="theme-switcher" title="Chuva" data-theme="chuva">🌧️</span>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Enchentes: Informação que Salva Vidas</h1>
+      <p>Monitoramento, alertas e colaboração para proteger comunidades brasileiras das enchentes.</p>
+      <a href="pages/formulario.html" class="cta">Colabore com um ponto de alagamento</a>
+    </section>
+
+    <section class="mapa">
+      <h2>Mapa de Zonas de Risco em Tempo Real</h2>
+      <img src="src/assets/mapa.png" alt="Mapa de zonas de risco" class="mapa-img">
+      <p class="legenda">Áreas coloridas indicam risco de enchente. Clique para detalhes.</p>
+    </section>
+
+    <section class="alertas">
+      <h2>Receba Alertas Personalizados</h2>
+      <ul>
+        <li>Alertas por WhatsApp, SMS ou notificações no app</li>
+        <li>Baseados na sua localização validada</li>
+        <li>Antecedência mínima de 24h para risco de enchente</li>
+      </ul>
+      <a href="pages/formulario.html" class="cta-secundaria">Cadastre-se para receber alertas</a>
+    </section>
+
+    <section class="colaborativo">
+      <h2>Colabore: Registre Pontos de Alagamento</h2>
+      <p>Ajude a mapear as áreas afetadas em tempo real. Seu registro será validado por outros usuários.</p>
+      <a href="pages/formulario.html">Registrar ponto</a>
+    </section>
+
+    <section class="historico">
+      <h2>Gráficos Históricos do Nível da Água</h2>
+      <canvas id="grafico-nivel"></canvas>
+    </section>
+
+    <section class="tecnologia">
+      <h2>Tecnologia a Serviço da Prevenção</h2>
+      <ul>
+        <li>Monitoramento com inteligência artificial e sensores</li>
+        <li>Imagens de satélite e sensoriamento remoto</li>
+        <li>Big Data para rotas seguras e planejamento urbano</li>
+        <li>Plataforma colaborativa e acessível</li>
+      </ul>
+    </section>
+
+    <section class="quiz">
+      <h2>Teste seus conhecimentos sobre enchentes</h2>
+      <a href="pages/quiz.html" class="cta">Fazer o Quiz</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Alerta de Enchentes. Todos os direitos reservados.</p>
+  </footer>
+  <script src="src/js/script.js"></script>
+</body>
+</html>

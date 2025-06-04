@@ -142,11 +142,15 @@ footer {
     align-content: center;
 }
 @media (max-width: 768px) {
-  header, .hero, .mapa, .alertas, .colaborativo, .historico, .tecnologia, .quiz {
-    padding: 16px 2%;
-    margin: 24px 2%;
+  header{
+    padding: auto;
+    margin: 0;
   }
   .logo {
     height: 90px;
+  }
+  .hero, .mapa, .alertas, .colaborativo, .historico, .tecnologia, .quiz {
+    padding: 16px 2%;
+    margin: 24px 2%;
   }
 }

@@ -41,6 +41,36 @@ if (!document.body.classList.contains('theme-claro') &&
   document.body.classList.add('theme-claro');
 }
 
+// Slideshow
+let slideIndex = 0;
+showSlides();
+
+function showSlides(n) {
+  let i;
+  const slides = document.getElementsByClassName("slide");
+  const dots = document.getElementsByClassName("dot");
+  if (!slides.length) return;
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  for (i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+  if (dots[slideIndex-1]) dots[slideIndex-1].classList.add("active");
+  setTimeout(showSlides, 5000); // Troca a cada 4 segundos
+}
+
+// Dots click
+document.querySelectorAll('.dot').forEach((dot, idx) => {
+  dot.addEventListener('click', function() {
+    slideIndex = idx;
+    showSlides();
+  });
+});
+
 // Validação de CPF e envio do formulário colaborativo
 function validarCPF(cpf) {
   cpf = cpf.replace(/[^\d]+/g, '');

@@ -189,6 +189,20 @@ form button {
 form button:hover {
   background: #0275d8;
 }
+.form-main h1{
+  padding-top: 10px;
+  text-align: center;
+}
+#colaborativoForm{
+  padding: 20px;
+}
+.quiz-main h1{
+  padding-top: 10px;
+  text-align: center;
+}
+#quizForm{
+  padding: 20px;
+}
 .pergunta {
   margin-bottom: 24px;
 }

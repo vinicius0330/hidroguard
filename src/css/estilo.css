@@ -9,6 +9,7 @@
     --text-color: #333;
     --selct-color: #000;
     --section-bg: #ffffff;
+    --gradient:linear-gradient(to top,rgba(0,0,0,0.6),rgba(0,0,0,0.3));
 }
 body {
   font-family: Arial, sans-serif;
@@ -217,7 +218,7 @@ footer {
     width: 100%;
     top: 110px;
     right: 0px;
-    background: #0275d8;
+    background: var(--gradient);
     transition: .6s;
     z-index: 1000;
     height: 0px;
@@ -242,10 +243,39 @@ footer {
     background: none;
     cursor: pointer;
     gap: .5rem;
+    color: var(--section-bg);
+  }
+  #btn-mobile:hover{
+    color: var(--selct-color);
   }
   #hamburguer{
+    color: var(--section-bg);
+    display: block;
     border-top: 2px solid;
     width: 20px;
+  }
+  #hamburguer:hover{
+    color: var(--selct-color);
+  }
+  #hamburguer::after, #hamburguer::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  #nav.active1 #hamburguer{
+    border-top-color: transparent;
+  }
+  #nav.active1 #hamburguer::before{
+    transform: rotate(135deg);
+  }
+  #nav.active1 #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7px;
   }
   .hero, .mapa, .alertas, .problema, .ajuda, .colaborativo, .historico, .tecnologia, .quiz {
     padding: 16px 2%;

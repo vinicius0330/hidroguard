@@ -47,10 +47,10 @@ const btnMobile = document.getElementById('btn-mobile');
 function toogleMenu(){
   const nav = document.getElementById('nav');
   nav.classList.toggle('active1');
-  // document.body.style.overflow = ('hidden'); QUANDO SELECIONAR MENU HAMBURGUER NÃO DEIXA DESCER
 }
 
 btnMobile.addEventListener('click', toogleMenu);
+
 // Slideshow
 let slideIndex = 0;
 showSlides();

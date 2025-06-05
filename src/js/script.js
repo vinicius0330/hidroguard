@@ -1,31 +1,3 @@
-// Gráfico histórico do nível da água (index.html)
-document.addEventListener("DOMContentLoaded", function () {
-  const grafico = document.getElementById("grafico-nivel");
-  if (grafico) {
-    // Exemplo simples usando Chart.js (deve incluir Chart.js via CDN no index.html para funcionar)
-    // Substitua os dados abaixo pelos dados reais do sistema
-    new Chart(grafico, {
-      type: 'line',
-      data: {
-        labels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
-        datasets: [{
-          label: 'Nível do Rio (m)',
-          data: [2.1, 2.3, 2.7, 2.4, 2.8, 3.1, 2.9],
-          borderColor: '#005b96',
-          backgroundColor: 'rgba(0,91,150,0.1)',
-          tension: 0.3
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          y: { beginAtZero: true }
-        }
-      }
-    });
-  }
-});
-
 // Tema
 document.querySelectorAll('.theme-switcher').forEach(btn => {
   btn.addEventListener('click', function() {

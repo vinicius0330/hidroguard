@@ -127,11 +127,12 @@ body.theme-chuva {
 #menu{
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 #menu1{
   display: flex;
-  gap: .6rem;
+  /* margin: 10px; */
+  /* gap: .6rem; */
 }
 #btn-mobile{
   display: none;
@@ -159,6 +160,33 @@ body.theme-chuva {
   padding: 24px;
   background: #fff;
   border-radius: 8px;
+}
+#alertas img{
+  width: 250px;
+  height: 200px;
+}
+#textoLocal{
+  display: flex;
+  margin-top: 10px;
+  gap: 300px;
+}
+#textoAlerta, #textoProblema, #textoAjuda, #textoTecnologia{
+  display: inline-flex;
+  margin-top: 20px;
+  list-style: none;
+}
+#problema img{
+  width: 400px;
+  height: 300px;
+}
+#ajuda img{
+  width: 400px;
+  height: 300px;
+}
+
+#grafico img{
+  width: 500px;
+  height: 350px;
 }
 .mapa-img {
   width: 100%;
@@ -254,6 +282,9 @@ footer {
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, .5);
   }
+  #menu{
+    flex-direction: column;
+  }
   #btn-mobile{
     display: flex;
     padding: .5rem 1rem;
@@ -299,5 +330,8 @@ footer {
   .hero, .mapa, .alertas, .problema, .ajuda, .colaborativo, .historico, .tecnologia, .quiz {
     padding: 16px 2%;
     margin: 24px 2%;
+  }
+  #mapa ,#alertas, #problema, #ajuda, #grafico, #tecnologias{
+    gap: 100px;
   }
 }

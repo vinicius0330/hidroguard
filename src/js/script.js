@@ -41,6 +41,16 @@ if (!document.body.classList.contains('theme-claro') &&
   document.body.classList.add('theme-claro');
 }
 
+// Menu hamburguer
+const btnMobile = document.getElementById('btn-mobile');
+
+function toogleMenu(){
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active1');
+  // document.body.style.overflow = ('hidden'); QUANDO SELECIONAR MENU HAMBURGUER NÃO DEIXA DESCER
+}
+
+btnMobile.addEventListener('click', toogleMenu);
 // Slideshow
 let slideIndex = 0;
 showSlides();
@@ -60,7 +70,7 @@ function showSlides(n) {
     dots[i].classList.remove("active");
   }
   if (dots[slideIndex-1]) dots[slideIndex-1].classList.add("active");
-  setTimeout(showSlides, 5000); // Troca a cada 4 segundos
+  setTimeout(showSlides, 5000); // Troca a cada 5 segundos
 }
 
 // Dots click
